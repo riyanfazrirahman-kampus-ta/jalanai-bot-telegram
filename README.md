@@ -1,18 +1,19 @@
-# Bot Informasi Gempa
+# Telegram Bot Jalan.Ai
 
-Bot ini menyediakan informasi terkini mengenai kejadian gempa bumi di seluruh wilayah Indonesia. Menggunakan data dari **[BMKG](https://data.bmkg.go.id/gempabumi/) (Badan Meteorologi, Klimatologi, dan Geofisika)**, bot ini mengirimkan informasi gempa secara real-time melalui Telegram.
+Bot ini menyediakan fitur klasifikasi kerusakan jalan. Menggunakan model dari website **[Jalan.Ai](https://jalanai.vercel.app/) (Tugas Akhir Riyan Fazri Rahman)**, bot ini memberikan hasil secara real-time dengan cara unggah gambar melalui Telegram.
 
 ## Cara Menjalankan Bot
 
 Perintah yang Tersedia di Telegram **[Bot Gempa - Riyan](https://t.me/tesryn_bot)**
 
 - `/start`: Menyambut pengguna dan memberikan informasi dasar tentang bot.
-- `/gempa`: Memberikan informasi terkini tentang gempa bumi yang terjadi.
+- `/status`: Memberikan informasi status server model.
+- `/history`: Memberikan informasi 10 daftar hasil klasifikasi.
+- `[unggah foto]`: Model akan mengklasifikasi secara otomatis.
 
-Atau kunjungi Website berikut: **[WEB bot-gempa-riyan](https://bot-gempa-riyan-api-bmkg.vercel.app/)**
+Atau kunjungi Website berikut: **[Jalan.Ai](https://jalanai.vercel.app/)**
 
-![Tampilan Website](/public/images/Screenshot-web-bot-gempa.png)
+## Penggunaan API
 
-## Penggunaan API BMKG
-
-Bot ini menggunakan data dari **endpoint [API BMKG](https://data.bmkg.go.id/gempabumi/)**, yaitu `autogempa.json`, yang menyediakan informasi tentang gempa bumi terkini.
+Bot ini menggunakan data dari **endpoint [API Jalan.Ai](https://jalanai-api.vercel.app/)**,
+yaitu `https://jalanai-api.vercel.app/api/classification`.
