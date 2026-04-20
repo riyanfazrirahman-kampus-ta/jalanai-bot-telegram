@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telegram Bot Jalan.Ai Documentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="bg-slate-100 text-slate-800 min-h-screen">
+
+    <div class="max-w-5xl mx-auto px-6 py-10">
+
+        <!-- HEADER -->
+        <header class="mb-10">
+            <div
+                class="inline-flex items-center gap-2 rounded-full border border-blue-300 bg-blue-100 px-4 py-1 text-sm text-blue-600 mb-4">
+                Documentation
+            </div>
+
+            <h1 class="text-4xl font-bold text-slate-900 mb-4">
+                Telegram Bot Jalan.Ai
+            </h1>
+
+            <p class="text-slate-600 leading-relaxed">
+                Bot ini menyediakan fitur klasifikasi kerusakan jalan.
+                Menggunakan model dari website
+                <a href="https://jalanai.vercel.app/" class="text-blue-600 font-medium hover:underline">
+                    Jalan.Ai
+                </a>
+                (Tugas Akhir Riyan Fazri Rahman), bot ini memberikan hasil secara real-time melalui unggahan gambar di
+                Telegram.
+            </p>
+        </header>
+
+        <!-- SECTION: BOT COMMAND -->
+        <section class="mb-10">
+            <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+
+                <h2 class="text-xl font-semibold mb-4">Perintah Bot Telegram</h2>
+
+                <ul class="space-y-2 text-slate-700">
+                    <li>📌 <code>/start</code> → Informasi dasar bot</li>
+                    <li>📊 <code>/status</code> → Status server model</li>
+                    <li>📜 <code>/history</code> → 10 hasil klasifikasi terakhir</li>
+                    <li>📷 Upload gambar → klasifikasi otomatis</li>
+                </ul>
+
+                <div class="mt-4 text-sm text-slate-500">
+                    Bot aktif di:
+                    <a href="https://t.me/tesryn_bot" class="text-blue-600 hover:underline">
+                        @tesryn_bot
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION: API -->
+        <section class="mb-10">
+            <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+
+                <h2 class="text-xl font-semibold mb-4">Penggunaan API</h2>
+
+                <p class="text-slate-600 mb-3">
+                    Bot ini menggunakan API dari endpoint berikut:
+                </p>
+
+                <div class="bg-slate-50 border border-slate-200 rounded-lg p-4">
+                    <code class="text-blue-600 break-all">
+                        <a href="https://jalanai-api.vercel.app/api/classification" target="_blank" class="hover:underline">
+                            https://jalanai-api.vercel.app/api/classification
+                        </a>
+                    </code>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="text-center text-sm text-slate-500">
+            © <%= new Date().getFullYear() %> Jalan.Ai ChatBot | Riyan Fazri Rahman
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
